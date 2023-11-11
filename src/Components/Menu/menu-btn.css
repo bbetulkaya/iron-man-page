@@ -1,0 +1,60 @@
+.header__menu-btn {
+  padding: 1.5rem 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.header__menu-btn .btn-middle {
+  height: 4px;
+  width: 35px;
+  background-color: var(--orange-color);
+
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.header__menu-btn .btn-top {
+  height: 4px;
+  width: 35px;
+  background-color: var(--orange-color);
+
+  position: absolute;
+  top: 13.5px;
+  transition: 0.3s ease;
+}
+
+.header__menu-btn .btn-bottom {
+  height: 4px;
+  width: 35px;
+  background-color: var(--orange-color);
+
+  position: absolute;
+  bottom: 10px;
+  transition: 0.3s ease;
+}
+
+/* Button Open/Close Animation */
+
+.header__menu-btn.open .btn-top {
+  background-color: var(--yellow-color);
+  transform: rotate(-45deg);
+  transform-origin: right;
+  top: 10px;
+}
+
+.header__menu-btn.open .btn-middle {
+  background-color: var(--yellow-color);
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.header__menu-btn.open .btn-bottom {
+  background-color: var(--yellow-color);
+  transform: rotate(45deg);
+  transform-origin: right;
+  bottom: 10px;
+}

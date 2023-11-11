@@ -1,0 +1,45 @@
+/* ====================== GOOGLE FONTS ========================== */
+/* Raleway - 700 800 900 */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700;800;900&display=swap");
+
+/* Merriweather - 300 400 400 italic */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,400&display=swap");
+
+/* ================ VARIABLES ================== */
+:root {
+  /* ========== Colors ============ */
+
+  --black-color: #130103;
+  --red-color: #cc0003;
+  --orange-color: #de2e02;
+  --yellow-color: #fded0d;
+  
+  --body-color: #130103;
+
+  /* ========== Font and typography ============ */
+  --subtext-font: "Merriweather", serif;
+  --headline-font: "Raleway", sans-serif;
+
+  /* ========== Font and typography ============ */
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
