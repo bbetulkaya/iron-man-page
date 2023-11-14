@@ -1,0 +1,71 @@
+.hero__subtitle{
+  margin-bottom: 4rem;
+}
+
+.hero__scroll-text {
+  position: relative;
+}
+
+.hero__scroll-text-r {
+  display: inline-block;
+  animation: 10s scrollRight infinite linear;
+}
+
+.hero__scroll-text-r span {
+  font-size: var(--fs-s);
+  font-weight: var(--fw-body-s);
+  color: var(--fc-dark-grey);
+  margin: 0 4rem;
+}
+
+.hero__scroll-text-l {
+  display: inline-block;
+  animation: 10s scrollLeft infinite linear;
+}
+
+.hero__scroll-text-l span {
+  font-size: var(--fs-s);
+  font-weight: var(--fw-body-s);
+  color: var(--fc-dark-grey-xl);
+  margin: 0 4rem;
+}
+
+
+/* Scroll Fade Effect */
+.hero__scroll-text::before,
+.hero__scroll-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 5rem;
+  height: 100%;
+  z-index: var(--scroll-text-z-index);
+}
+
+.hero__scroll-text::before {
+  left: 0;
+  background: linear-gradient(to left, transparent, var(--primary-body-color));
+}
+
+.hero__scroll-text::after {
+  right: 0;
+  background: linear-gradient(to right, transparent, var(--primary-body-color));
+}
+
+/* SCROLL ANIMATION */
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes scrollRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

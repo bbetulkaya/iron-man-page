@@ -1,6 +1,8 @@
 @import url("menu-btn.css");
 
 .header {
+  position: sticky;
+  top: 0;
   padding-top: 1.5rem;
   display: flex;
 
@@ -8,14 +10,14 @@
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
+  z-index: var(--header-z-index);
 }
 
 .header__logo {
-  color: var(--orange-color);
-  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-size: var(--fs-xs);
   font-family: var(--headline-font);
-  font-weight: 900;
+  font-weight: var(--fw-head-xxl);
   transition: 0.2s ease-in-out;
 }
 
@@ -29,19 +31,18 @@
   gap: 1.25rem;
 }
 .header__menu-list li a {
-  font-size: 3rem;
   font-family: var(--headline-font);
-  font-weight: 800;
+  font-size: var(--fs-m);
+  font-weight: var(--fw-head-xl);
   text-transform: uppercase;
-  color: var(--yellow-color);
+  color: var(--secondary-color);
 
   transition: 0.3s ease-in-out;
 }
 
 .header__menu-list li a:hover {
-  color: var(--black-color);
+  color: var(--fc-white);
   padding-left: 0.5rem;
-  font-weight: 900;
 }
 
 .header__menu-list.show {
@@ -52,13 +53,13 @@
   width: 100%;
   height: 100%;
 
-  background: var(--red-color);
+  background: var(--primary-color);
   justify-content: center;
   align-items: center;
 
-  z-index: 1;
+  z-index: var(--menu-z-index);
 }
 
 .header__logo.open {
-  opacity: 0;
+  color: var(--primary-color);
 }

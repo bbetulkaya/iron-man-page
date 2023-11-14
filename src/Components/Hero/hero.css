@@ -1,0 +1,68 @@
+@import url("hero-scroll-text.css");
+
+.hero__section {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.hero__title {
+  font-family: var(--headline-font);
+  font-weight: var(--fw-head-xxl);
+  font-size: var(--fs-xxl);
+
+  color: var(--fc-white);
+  text-align: center;
+  white-space: wrap;
+
+  letter-spacing: 1rem;
+  word-spacing: 6rem;
+
+  margin-bottom: -2rem;
+}
+
+.hero__3d-model {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: var(--model-z-index);
+}
+
+/* ================ BREAKPOINTS ================== */
+/* Large Devices */
+@media screen and (max-width: 1024px) {
+  .hero__title {
+    letter-spacing: 0px;
+  }
+}
+@media screen and (max-width: 992px) {
+}
+/* Medium Devices */
+@media screen and (max-width: 768px) {
+  .hero__title {
+    margin-bottom: 0px;
+  }
+
+  .hero__subtitle{
+    margin-bottom: 10rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero__section {
+    margin-top: 1.5rem;
+    justify-content: flex-start;
+  }
+
+  .hero__3d-model{
+    top: 120px;
+  }
+
+}
+/* Small Devices */
+@media screen and (max-width: 350px) {
+}

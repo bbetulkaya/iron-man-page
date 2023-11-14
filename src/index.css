@@ -9,19 +9,42 @@
 :root {
   /* ========== Colors ============ */
 
-  --black-color: #130103;
-  --red-color: #cc0003;
-  --orange-color: #de2e02;
-  --yellow-color: #fded0d;
-  
-  --body-color: #130103;
+  --primary-color: #A40404;
+  --secondary-color: #ffd900;
 
-  /* ========== Font and typography ============ */
-  --subtext-font: "Merriweather", serif;
+  --primary-body-color: #191102;
+  --secondary-body-color: #ffb115;
+
+  --fc-white: #fffffc;
+  --fc-grey: #c6c6c4;
+  --fc-dark-grey: #91918e;
+  --fc-dark-grey-xl: #5e5e5c;
+  --fc-black: #30302e;
+
+  /* ========== Font ============ */
+  --body-font: "Merriweather", serif;
   --headline-font: "Raleway", sans-serif;
 
-  /* ========== Font and typography ============ */
+  /* ========== Typography ============ */
+  --fs-xxl: 10rem;
+  --fs-xl: 6.1rem;
+  --fs-m: 3.7rem;
+  --fs-s: 2.2rem;
+  --fs-xs: 1.3rem;
 
+  --fw-head-xxl: 900;
+  --fw-head-xl: 800;
+  --fw-head-l: 700;
+
+  --fw-body-xl: 400;
+  --fw-body-s: 300;
+
+  /* ========== Z-index ============ */
+
+  --header-z-index: 4;
+  --menu-z-index: 3;
+  --model-z-index: 2;
+  --scroll-text-z-index: 1;
 }
 
 * {
@@ -32,7 +55,9 @@
 }
 
 body {
-  background-color: var(--body-color);
+  background-color: var(--primary-body-color);
+  font-family: var(--body-font);
+  color: var(--fc-white);
 }
 
 a {
@@ -43,3 +68,45 @@ ul {
   list-style-type: none;
 }
 
+/* HIDE SCROLLBAR */
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+/* ================ BREAKPOINTS ================== */
+/* Large Devices */
+@media screen and (max-width: 992px) {
+}
+/* Medium Devices */
+@media screen and (max-width: 768px) {
+  :root {
+    /* ========== Typography ============ */
+    --fs-xxl: 8rem;
+    --fs-xl: 5rem;
+    --fs-m: 3rem;
+    --fs-s: 1.85rem;
+    --fs-xs: 1.15rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  :root {
+    /* ========== Typography ============ */
+    --fs-xxl: 7rem;
+    --fs-xl: 4.3rem;
+    --fs-m: 2.65rem;
+    --fs-s: 1.63rem;
+    --fs-xs: 1rem;
+  }
+}
+/* Small Devices */
+@media screen and (max-width: 350px) {
+}
