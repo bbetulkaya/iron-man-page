@@ -9,7 +9,7 @@
 :root {
   /* ========== Colors ============ */
 
-  --primary-color: #A40404;
+  --primary-color: #a40404;
   --secondary-color: #ffd900;
 
   --primary-body-color: #191102;
@@ -72,6 +72,7 @@ ul {
 html {
   overflow: scroll;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */

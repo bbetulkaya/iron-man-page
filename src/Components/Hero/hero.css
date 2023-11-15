@@ -48,7 +48,7 @@
     margin-bottom: 0px;
   }
 
-  .hero__subtitle{
+  .hero__subtitle {
     margin-bottom: 10rem;
   }
 }
@@ -58,10 +58,9 @@
     justify-content: flex-start;
   }
 
-  .hero__3d-model{
+  .hero__3d-model {
     top: 120px;
-  }
-
+  } 
 }
 /* Small Devices */
 @media screen and (max-width: 350px) {
