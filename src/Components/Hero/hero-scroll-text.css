@@ -1,9 +1,13 @@
-.hero__subtitle{
+.hero__subtitle {
   margin-bottom: 4rem;
 }
 
 .hero__scroll-text {
   position: relative;
+  background-color: var(--secondary-color);
+
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 0;
 }
 
 .hero__scroll-text-r {
@@ -13,8 +17,8 @@
 
 .hero__scroll-text-r span {
   font-size: var(--fs-s);
-  font-weight: var(--fw-body-s);
-  color: var(--fc-dark-grey);
+  font-weight: var(--fw-body-l);
+  color: var(--fc-black);
   margin: 0 4rem;
 }
 
@@ -25,11 +29,10 @@
 
 .hero__scroll-text-l span {
   font-size: var(--fs-s);
-  font-weight: var(--fw-body-s);
-  color: var(--fc-dark-grey-xl);
+  font-weight: var(--fw-body-l);
+  color: var(--fc-black);
   margin: 0 4rem;
 }
-
 
 /* Scroll Fade Effect */
 .hero__scroll-text::before,
@@ -44,12 +47,12 @@
 
 .hero__scroll-text::before {
   left: 0;
-  background: linear-gradient(to left, transparent, var(--primary-body-color));
+  background: linear-gradient(to left, transparent, var(--secondary-color));
 }
 
 .hero__scroll-text::after {
   right: 0;
-  background: linear-gradient(to right, transparent, var(--primary-body-color));
+  background: linear-gradient(to right, transparent, var(--secondary-color));
 }
 
 /* SCROLL ANIMATION */

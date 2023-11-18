@@ -7,10 +7,8 @@ function App() {
   return (
     <>
       <Menu />
-      <main>
-        <Hero />
-        <About />
-      </main>
+      <Hero />
+      <About />
     </>
   );
 }

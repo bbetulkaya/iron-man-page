@@ -1,6 +1,56 @@
-.about__section {
+.about__container {
+  display: grid;
+  place-items: center;
   height: 100vh;
+
+  /* background-image: url("../public/assets/textures/graphy-dark.png");
+  background-image: url("../public/assets/textures/inflicted.png"); */
+}
+
+.about__section {
+  width: 80vw;
+  height: 85vh;
+
+  display: grid;
+  grid-template-columns: 0.6fr 1fr 0.1fr;
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+.about__left-side,
+.about__middle,
+.about__right-side {
+}
+
+.about__left-side {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+
+  align-items: flex-start;
+}
+
+.about__titles {
+}
+
+.about__title {
+  color: var(--fc-white);
+  font-weight: var(--fw-head-xl);
+  font-family: var(--headline-font);
+  font-size: var(--fs-xl);
+
+  background-color: var(--primary-color);
+  padding: 0.25rem 5rem 0.25rem 1rem;
+}
+
+.about__subtitle {
+  color: var(--fc-black);
+  font-weight: var(--fw-head-l);
+  font-family: var(--headline-font);
+  font-size: var(--fs-xs);
+
+  background-color: var(--secondary-color);
+  padding: 0.25rem 1rem;
+  margin-top: 0.25rem;
 }

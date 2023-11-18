@@ -9,6 +9,7 @@
 
   white-space: nowrap;
   overflow: hidden;
+  
 }
 
 .hero__title {
@@ -24,6 +25,11 @@
   word-spacing: 6rem;
 
   margin-bottom: -2rem;
+  padding: 0 1.5rem;
+
+  width: fit-content;
+  align-self: center;
+  background-color: var(--primary-color);
 }
 
 .hero__3d-model {
@@ -60,7 +66,7 @@
 
   .hero__3d-model {
     top: 120px;
-  } 
+  }
 }
 /* Small Devices */
 @media screen and (max-width: 350px) {
