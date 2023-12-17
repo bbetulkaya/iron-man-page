@@ -1,4 +1,5 @@
 import "./about.css";
+import Spline from "@splinetool/react-spline";
 const About = () => {
   return (
     <>
@@ -29,7 +30,11 @@ const About = () => {
             </div>
           </div>
           <div className="about__middle">
-            <div className="about__left-3dmodel"></div>
+            <div className="about__image-bg"></div>
+            <div className="about__image">
+              <img src="../public/assets/tonystark/tony-03.jpg" alt="" />
+            </div>
+            <div className="about__image-border"></div>
           </div>
           <div className="about__right-side"></div>
         </div>
